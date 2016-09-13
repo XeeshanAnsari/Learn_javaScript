@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Object</title>
+    <script>
+        function person(name , age){
+            this.name = name;
+            this.age = age;
+        }
+        var xeeshan = new person("Xeeshan",18);
+        var sha = new person("Sharook",20);
+    </script>
+</head>
+<body>
+    <script>
+        document.write(xeeshan.name + xeeshan.age + "<br>");
+        document.write(sha.name );
+    </script>
+</body>
+</html>
