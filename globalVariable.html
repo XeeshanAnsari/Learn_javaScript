@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Global variable</title>
+    
+</head>
+<body>
+    <script>
+        //use golbal variable
+        var name = "Xeeshan";
+        function myName(){
+           document.write(name  + "<br>");
+        }
+        
+        myName();
+        document.write(name + "<br>");
+        
+        //use Local variable
+        
+        function myName(){
+           var name_1 = "Xeeshan";
+           document.write(name_1 + "<br>");
+        }
+        
+        myName();
+        document.write(name_1 + "<br>");
+    </script>
+</body>
+</html>
