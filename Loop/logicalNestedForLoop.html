@@ -5,19 +5,47 @@
     <title>Nested For Loop</title>
     <script>
         
-      
-        for(var i=1; i<18; i++){
-            for(var j=1; j<i; j++){
-                 document.write("*");            
+       for(var i=1; i<18; i++){
+           
+           for(var s=1; s<30; s++){
+                 document.write("- ");            
            } 
-            document.write("<br>"); 
-        }
-        for(var i=1; i<18; i++){
+           
             for(var j=18; j>i; j--){
+                 document.write("- ");            
+           } 
+           for(var k=1; k<i; k++){
                  document.write("*");            
            } 
+           
+           
+           for(var h=1; h<i; h++){
+                 document.write("*");            
+           } 
+            
+           document.write("<br>");
+        }
+        
+        
+        for(var i=1; i<18; i++){
+            for(var s=1; s<30; s++){
+                 document.write("- ");            
+           }
+           
+            for(var j=1; j<i; j++){
+                 document.write("- ");            
+           } 
+           
+            for(var k=18; k>i; k--){
+                 document.write("*");            
+           } 
+            for(var h=18; h>i; h--){
+                 document.write("*");            
+           }
+           
             document.write("<br>"); 
         }
+        
     </script>
     
 </head>
