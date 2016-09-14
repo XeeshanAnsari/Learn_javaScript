@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lower And Upper Case</title>
+    <script>
+        var cityToCheck = prompt("Enter your city");
+          cityToCheck = cityToCheck.toLowerCase();
+        var cleanestCities = ["karachi", "lahore", "quetta", "islamabad"];
+         for (var i = 0; i <= 4; i++) {
+            if (cityToCheck === cleanestCities[i]) {
+               document.write("It's one of the cleanest cities " + cleanestCities[i] + "<br>");
+                }
+         } 
+         
+         
+         var cityCheck = prompt("Enter your city");
+          cityCheck = cityCheck.toUpperCase();
+        var cleanCities = ["KARACHI", "LAHORE", "QUETTA", "ISLAMABAD"];
+         for (var i = 0; i <= 4; i++) {
+            if (cityCheck === cleanCities[i]) {
+               document.write("It's one of the cleanest cities " + cleanCities[i]);
+                }
+         } 
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
