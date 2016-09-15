@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CurrentDate</title>
+</head>
+<body>
+    <script>
+        var date = new Date();
+        document.write("<b>Full Date : </b>" + date + "<br>");
+        
+        var dateStng = date.toString();
+        document.write("<b>Full Date in String : </b>" + dateStng + "<br>" ); 
+        
+        var theDay = date.getDay();
+        document.write("<b>Day in Number : </b>" + theDay + "<br>" ); 
+        
+        var dayName = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+        var dayStrng = theDay[dayName];
+        document.write("<b>Day in String : </b>" + dayStrng + "<br>" ); 
+        
+        
+        var theMonth = date.getMonth();
+        document.write("<b>Month in Number : </b>" + theMonth + "<br>" ); 
+        
+        var theDate = date.getDate();
+        document.write("<b>Date in Number : </b>" + theDate + "<br>" );
+        
+        var theYear = date.getFullYear();
+        document.write("<b>Year in Number : </b>" + theYear + "<br>" ); 
+        
+        var theHour = date.getHours();
+        document.write("<b>Hour's : </b>" + theHour + "<br>" );
+        
+        var theMin = date.getMinutes();
+        document.write("<b>Minute's : </b>" + theMin + "<br>" );
+        
+        var theSec = date.getSeconds();
+        document.write("<b>Second : </b>" + theSec + "<br>" );
+        
+        var theMiliSec = date.getMilliseconds();
+        document.write("<b>MilliSecond : </b>" + theMiliSec + "<br>" );
+        
+        var theTime = date.getTime();
+        document.write("<b>Current Time in milli second: </b>" + theTime + "<br>" );
+        
+    </script>
+</body>
+</html>
