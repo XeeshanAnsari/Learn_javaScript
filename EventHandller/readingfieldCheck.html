@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reading field</title>
+    <script>
+        function checkField(fieldId){
+            var val = document.getElementById(fieldId).value;
+
+            if (val ==== ""){
+                alert("Plaese Fill Form First than submit");
+            }
+            
+        }
+    </script>
+</head>
+<body>
+    <form onsubmit="checkField('email');">
+        <input type="text"  id="email">
+        <input type="submit" value="submit">
+    </form>
+    
+    
+</body>
+</html>
