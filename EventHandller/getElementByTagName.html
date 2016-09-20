@@ -5,10 +5,18 @@
     <title>getElementBytagName</title>
 </head>
 <body>
+    <div id="div1">
     <p>Simple text here for getElementByTagName</p>
+    <em>hello world</em>
+    </div>
     <script>
        var tagName = document.getElementsByTagName("p");
        tagName[0].style.fontSize = "500%";
+       
+       var div  = document.getElementById("div1");
+       var m = div.getElementsByTagName("em");
+       m[0].style.color = "red";
+       
     </script>
 </body>
 </html>
