@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Field value</title>
+      <script>
+        function zipCode(){
+            var cityName;
+            var enterdCity = document.getElementById("zip").value;
+            switch(enterdCity){
+                case "203":
+                cityName = "Karachi";
+                break;
+                case "204":
+                cityName = "Multan";
+                break;
+                case "201":
+                cityName = "Lahore";
+                break;
+                
+            }
+            document.getElementById("city").value = cityName;
+        }
+    </script>
+</head>
+<body>
+    <form action="">
+        Zip code <br>
+        <input type="text"  id="zip" onblur="zipCode();"><br>
+        City <br>
+        <input type="text" id="city">
+    </form>
+    
+  
+</body>
+</html>
