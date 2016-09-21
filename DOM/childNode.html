@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>childNode</title>
+</head>
+<body>
+    <div id="cal">
+      <p>Southern Cal is sunny.</p> 
+      <p>Northern Cal is rainy.</p>
+      <p>Eastern Cal is desert.</p> 
+    </div>
+    <div id="ny">
+       <p>Urban NY is crowded.</p>
+       <p>Rural NY is sparse.</p>
+    </div>
+
+    <script>
+        var d  = document.getElementById("ny");
+        var p  = d.childNodes[1];
+        p.style.color  = "red";
+        
+        var e  = document.getElementById("cal");
+        var f  = e.childNodes[1];
+        f.innerHTML = "Pakistan cal is Sunny";
+        
+    </script>
+</body>
+</html>
