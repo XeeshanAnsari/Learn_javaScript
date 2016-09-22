@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM attribute</title>
+</head>
+<body>
+    <table >
+        <tr>
+            <td>hello</td>
+            <td>hy</td>
+        </tr>
+    </table>
+    <img src="dan.gif" alt="Dan" height="42" width="42" id="img">
+    <script>
+        var table = document.getElementsByTagName("table");
+         table.setAttributes("border","1");
+         
+         var img = document.getElementById("img").attributes;
+         var listAttribute = img.length;
+         var attributeName = listAttribute[1].nodeName;
+         document.write(attributeName);
+    </script>
+</body>
+</html>
