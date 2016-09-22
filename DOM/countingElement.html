@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Counting Element</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+             <li></li>
+             <li>Contact</li>
+        </ul>
+    </div>
+    <script>
+        var liEle = document.getElementsByTagName("li");
+        var listEle  = liEle.length;
+        
+        for(var i = 0;  i < listEle; i++ ){
+            if(liEle[i].innerHTML === ""){
+                liEle[i].innerHTML = "Coming Soon";
+            }
+        }
+    </script>
+</body>
+</html>
