@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Creating Element</title>
+</head>
+<body>
+    <div id="div1"> 
+        
+    </div>
+    <script>
+        var parentDiv = document.getElementById("div1");
+        var createPar = document.createElement("p");
+        var text = document.createTextNode("Craeting PAragraph");
+        createPar.appendChild(text);
+        parentDiv.appendChild(createPar);
+        
+        // insert ELEmeNT BEFORE
+        var parentDiv = document.getElementById("div1");
+        var createPar2 = document.createElement("p");
+        var text2 = document.createTextNode("Craeting second PAragraph");
+        createPar2.appendChild(text2);
+        paragraph = parentDiv.firstChild;
+        parentDiv.insertBefore(createPar2 , paragraph);
+    </script>
+</body>
+</html>
