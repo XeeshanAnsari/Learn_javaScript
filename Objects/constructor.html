@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>constructor</title>
+</head>
+<body>
+    <script>
+        var plan = {
+            name: "basic",
+            price: 3.55 ,
+            space:  20,
+            transfer: 1000,
+            pages:  10
+        };
+        
+        function Plan (name, price, space, transfer, pages){
+            this.name = name;
+            this.price = price;
+            this.space = space;
+            this.transfer = transfer;
+            this.page  = pages;
+            
+        }
+        
+        
+         var plan1 = new Plan("Basic", 3.99, 100, 1000, 10);
+         var plan2 = new Plan("Premium", 5.99, 500, 5000, 50);
+         var plan3 = new Plan("Ultimate", 9.99, 2000, 20000, 500);
+ 
+         document.write(plan1);
+         document.write(plan2);
+         document.write(plan3);
+         
+
+    </script>
+</body>
+</html>
