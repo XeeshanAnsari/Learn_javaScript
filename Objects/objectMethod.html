@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Method</title>
+</head>
+<body>
+    <script>
+        var plan1 = {
+            name:"shan",
+            fname:"shafiq",
+            age: 19,
+            status: "single",
+            person: function(){
+                var age1  = this.age;
+                var perAge;
+                if(age1 < 19){
+                    perAge = "I'm child";
+                }
+                else if(age1 >= 19 && age1 <= 355 ){
+                    perAge = "I'm young";
+                }
+                else{
+                    perAge = "I'm old";
+                }
+                     document.write("Name:" + this.name + "<br>"); 
+                     document.write("Father Name :"  + this.fname + "<br>");
+                     document.write("Age:" + perAge + "<br>");
+                     document.write("status:" + this.status + "<br>");
+            }
+        };
+            plan1.person();
+    </script>
+</body>
+</html>
