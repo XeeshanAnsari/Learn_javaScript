@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Object Property</title>
+</head>
+<body>
+    <script>
+       var root1 = {
+           name: "Basic",
+           price: 3.99,
+           space: 100,
+           transfer: 1000,
+           page: 10 
+       };
+         root1.discount = 10;
+         delete root1.page;
+         propertyExist = "_space_" in root1;
+         
+         
+       document.write("Name:" + root1.name + "<br>"); 
+       document.write("price :"  + root1.price + "<br>");
+       document.write("space:" + root1.space + "<br>");
+       document.write("transfer:" + root1.transfer + "<br>");
+       document.write("page is delete:" + root1.page + "<br>");
+       
+       document.write("Discount:" + root1.discount + "<br>");
+       document.write("propertyExist:" + propertyExist + "<br>");
+       
+    </script>
+</body>
