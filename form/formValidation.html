@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Validation</title>
+</head>
+<body>
+    <form action="" onsubmit="return checkForLastName();">
+        please Enter Name <br>
+        <input type="text" id="LastNameField">
+        <input type="submit" value="submit form">
+    </form>
+    
+    <script>
+        function checkForLastName(){
+            var target = document.getElementById("LastNameField");
+            if(target.value.length === 0){
+                alert("Fill The Last Name");
+                target.focus();
+                target.style.background = "yellow";
+                return false;
+            }
+              target.style.background = "white";
+        }
+    </script>
+</body>
+</html>
