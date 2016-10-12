@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Radio Button</title>
+</head>
+<body>
+    <form onSubmit="return validateRadios('r1');">
+        <input type="radio" name="r1" value="cat"> Cat<br>
+        <input type="radio" name="r1" value="bat"> Bat<br>
+        <input type="radio" name="r1" value="hat"> Hat<br>
+        <input type="submit" value="Submit Form">
+    </form>
+    <script>
+        function validateRadios(eName){
+            var target = document.getElementsByName(eName);
+            for(var i=0; i < target.length;  i++){
+                if(target[i].checked){
+                    return true;
+                }
+            }
+            alert("Please Check first");
+            return false;
+        }
+    </script>
+</body>
+</html>
