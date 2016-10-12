@@ -5,7 +5,7 @@
     <title>dorp  down</title>
 </head>
 <body>
-    <form onSubmit="return checkForSelection();"> 
+    <form onSubmit="return checkForSelection('states');"> 
       <select id="states">
           <option value="" selected="selected">
              SELECT A STATE</option>
@@ -16,5 +16,14 @@
        </select>&nbsp;&nbsp;
        <input type="submit" value="Submit Form">
     </form>
+    <script>
+        function checkForSelection(selectID){
+            var target = document.getElementById(selectID);
+            if (target.selectedIndex === 0){
+                alert("please Select States")
+                return false;
+            }
+        }
+    </script>
 </body>
 </html>
